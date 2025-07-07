@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surigao del Sur Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #014d4d;  
+      color: #fff1e6;      
+    }
+
+    header {
+      background: #014d4d;
+      color: #fff1e6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #016161;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff1e6;
+      text-decoration: none;
+      margin: 0 15px;
+      display: inline-block;
+      padding: 10px 15px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: #00a3a3;
+      color: #012626;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .post {
+      background: #fff1e6;
+      color: #014d4d;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease-out forwards;
+      text-align: center;
+    }
+
+    .post:nth-child(1) { animation-delay: 0.1s; }
+    .post:nth-child(2) { animation-delay: 0.3s; }
+    .post:nth-child(3) { animation-delay: 0.5s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .post img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    .post-content {
+      padding: 15px;
+    }
+
+    .post-content h2 {
+      margin-top: 0;
+      color: #014d4d;
+    }
+
+    footer {
+      background: #014d4d;
+      color: #fff1e6;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discover Surigao del Sur</h1>
+    <p>Your guide to the hidden gems of the Philippines</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="Destionations.html">Destinations</a>
+    <a href="Food.html">Food</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="post">
+      <img src="laswitan.jpg" alt="Laswitan Lagoon" />
+      <div class="post-content">
+        <h2>Laswitan Lagoon: Nature's Wave Pool</h2>
+        <p>Laswitan Lagoon in Cortes is a unique natural attraction where waves crash over rock formations, creating a stunning saltwater lagoon. It's a must-visit for nature enthusiasts.</p>
+      </div>
+    </div>
+    <div class="post">
+      <img src="cagwait.jpg" alt="Cagwait White Beach" />
+      <div class="post-content">
+        <h2>Cagwait White Beach: A Tropical Paradise</h2>
+        <p>Often compared to Boracay, Cagwait White Beach boasts powdery white sand and calm turquoise waters. It's a serene getaway for those seeking relaxation.</p>
+      </div>
+    </div>
+    <div class="post">
+      <img src="lanuzasurf.jpg" alt="Lanuza Surfing Spot" />
+      <div class="post-content">
+        <h2>Lanuza Surfing Spot: Ride the Waves</h2>
+        <p>Lanuza is a haven for surfers, offering world-class waves and a laid-back vibe. Whether you're a pro or a beginner, this spot is perfect for catching waves.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Surigao del Sur Blog | All rights reserved
+  </footer>
+</body>
+</html>

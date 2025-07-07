@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Foods in Surigao del Sur</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #007d7d;
+      color: #fff;
+    }
+
+    header {
+      background-color: #007d7d;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .section-title {
+      grid-column: 1 / -1;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      animation: fadeIn 1s ease-out both;
+    }
+
+    .card {
+      background-color: #009e9e;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+      color: #fff;
+    }
+
+    .card:nth-child(2) { animation-delay: 0.1s; }
+    .card:nth-child(3) { animation-delay: 0.2s; }
+    .card:nth-child(4) { animation-delay: 0.3s; }
+    .card:nth-child(6) { animation-delay: 0.4s; }
+    .card:nth-child(7) { animation-delay: 0.5s; }
+    .card:nth-child(8) { animation-delay: 0.6s; }
+    .card:nth-child(10) { animation-delay: 0.7s; }
+    .card:nth-child(11) { animation-delay: 0.8s; }
+    .card:nth-child(12) { animation-delay: 0.9s; }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #f9e79f;
+    }
+
+    .card p {
+      margin: 10px 0 0;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      background-color: #007d7d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Foods in Surigao del Sur</h1>
+    <p>Local delicacies from Lanuza, Cagwait, and Laswitan Lagoon</p>
+  </header>
+
+  <div class="container">
+    <div class="section-title">Lanuza</div>
+
+    <div class="card">
+      <img src="Inun-unan na isda.jpg" alt="Inun-unan na Isda">
+      <h3>Inun-unan na Isda (Fish Stew)</h3>
+      <p>Simmered fish in vinegar, garlic, and ginger a classic coastal comfort dish.</p>
+    </div>
+
+    <div class="card">
+      <img src="Kinilaw na isda.jpg" alt="Kinilaw na Isda">
+      <h3>Kinilaw na Isda (Raw Fish Salad)</h3>
+      <p>Fresh fish marinated in vinegar, chili, and lime perfectly refreshing after surfing.</p>
+    </div>
+
+    <div class="card">
+      <img src="Grilled Pusit.jpg" alt="Grilled Pusit">
+      <h3>Grilled Pusit (Squid)</h3>
+      <p>Fresh squid grilled to perfection and served with spicy vinegar sauce.</p>
+    </div>
+
+    <div class="section-title">Cagwait</div>
+
+    <div class="card">
+      <img src="Tinolang isda.jpg" alt="Tinolang Isda">
+      <h3>Tinolang Isda</h3>
+      <p>A hearty fish soup made with ginger and leafy greens simple and nourishing.</p>
+    </div>
+
+    <div class="card">
+      <img src="Sea Urchin.jpg" alt="Sea Urchin Tuyom">
+      <h3>Sea Urchin (Tuyom)</h3>
+      <p>A rare delicacy enjoyed fresh or marinated with vinegar and chili.</p>
+    </div>
+
+    <div class="card">
+      <img src="Lato Salad.jpg" alt="Lato Salad">
+      <h3>Lato Salad (Sea Grapes)</h3>
+      <p>Salty and crunchy seaweed served with tomatoes and vinegar light and healthy.</p>
+    </div>
+
+    <div class="section-title">Laswitan Lagoon (Cortes)</div>
+
+    <div class="card">
+      <img src="Sutukil Combo.jpg" alt="Sutukil Combo">
+      <h3>Sutukil (Sugba-Tula-Kilaw Combo)</h3>
+      <p>Enjoy grilled, soup-based, and raw seafood dishes in one local favorite platter.</p>
+    </div>
+
+    <div class="card">
+      <img src="Adobong Pusit.jpg" alt="Adobong Pusit">
+      <h3>Adobong Pusit</h3>
+      <p>Squid cooked in soy sauce, vinegar, and garlic savory and tender.</p>
+    </div>
+
+    <div class="card">
+      <img src="Cassava Delicacies.jpg" alt="Cassava Cake">
+      <h3>Cassava Delicacies</h3>
+      <p>Sweet native treats like cassava cake and pichi-pichi, made from grated cassava and coconut.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Surigao del Sur Food Guide | All rights reserved
+  </footer>
+</body>
+</html>
